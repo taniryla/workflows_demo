@@ -14,8 +14,8 @@ jobs:
 
     # runs a single commandnusing the runners shell, using run:
     - run: |
-      echo "Job running on a ${{ runner.os }} server hosted by GitHub."
-      echo "On branch ${{ github.ref }} of repository ${{ github.repository }}."
+        echo "Job running on a ${{ runner.os }} server hosted by GitHub."
+        echo "On branch ${{ github.ref }} of repository ${{ github.repository }}."
 
     - name: Check out repository code so it can be run by GitHub
       uses: actions/checkout@v3
